@@ -1,43 +1,576 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="light-style layout-menu-fixed">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="OSOGI SERVICES">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+  <title>OSIGI SERVICES - Manpower Consultancy Inspire</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/style2.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html"></a></h1>
+
+      <nav id="navbar" class="navbar">
+        <a class="navbar-brand" >OSOGI SERVICES</a>
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#pricing">Services</a></li>
+          <li><a class="nav-link scrollto" href="#cta">Milestone</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex align-items-center">
+  <div class="container position-relative" data-aos="fade-up" data-aos-delay="500">
+    <h1>Welcome to OSIGI SERVICES!</h1>
+    <h2>Your premier destination for top-notch services tailored to meet your unique needs. With a commitment to excellence and
+      customer satisfaction, we pride ourselves on delivering exceptional services that
+      exceed expectations</h2>
+    <a href="#about" class="btn-get-started scrollto">Learn More</a>
+  </div>
+</section>
+<!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+<section id="about" class="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
+        <img src="assets/img/about.jpg" class="img-fluid" alt="">
+      </div>
+      <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
+        <h3>Welcome to Osigi Services</h3>
+        <p style="text-align:justify;">
+          Founded in 2016, OSOGI Services Sdn Bhd is a management,consulting, and outsourcing company. We offer expert assistance with work permit and visa renewal for foreign nationals and employees, as well as transport services and expert consultation
+        </p>
+        <!--<ul>
+          <li><i class="bi bi-check-circle"></i> Secure and Reliable Data Storage Solutions.</li>
+          <li><i class="bi bi-check-circle"></i> Access your data anytime, anywhere.</li>
+          <li><i class="bi bi-check-circle"></i> Experience unparalleled data management and protection with Sky Storage. Say goodbye to data loss worries.</li>
+        </ul>-->
+        <p style="text-align:justify;">
+          We offer a comprehensive range of services designed to cater to various
+          industries and sectors.What sets us apart is our dedication to quality, innovation, and customer-centric
+          approach. We understand the importance of delivering services that not only meet
+          but exceed your requirements. With a focus on continuous improvement and
+          staying ahead of industry trends, we are constantly evolving to ensure that our
+          services align with your changing needs
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End About Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-4" data-aos="fade-up">
+            <div class="box">
+              <span>01</span>
+              <h4>Osigi's Vision</h4>
+                <p style="text-align:justify;">
+                  To be the leading provider of innovative and reliable services that empower individuals and businesses to thrive. We aspire to set new
+                  industry standards by delivering exceptional solutions that exceed expectations, foster growth, and create lasting value for our clients and partners. <br>
+                  Through a commitment to excellence, integrity, and continuous improvement, we aim to be recognized as a trusted and
+                  preferred partner in driving success and making a positive impact in the communities we serve."
+                  </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="150">
+            <div class="box">
+              <span>02</span>
+              <h4>Osigi's Mission</h4>
+              <p style="text-align:justify;"> To deliver exceptional services that consistently exceed our clients'
+                expectations. We are dedicated to providing innovative, reliable, and
+                customer-centric solutions that address the unique needs of
+                individuals and businesses. Through a commitment to professionalism,
+                integrity, and quality, we strive to build long-lasting relationships with
+                our clients based on trust, respect, and collaboration. Our mission is to
+                empower our clients to achieve their goals, drive success, and make a
+                positive impact in the communities we serve.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="box">
+              <span>03</span>
+              <h4> Why Choose Osigi Services</h4>
+              <p>OSOGI Services Sdn Bhd welcomes you to get in touch with our office. if you'd need a quote, further details, or guidance</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients">
+      <div class="section-title"><h2>Our Client</h2></div>
+      <div class="container" data-aos="zoom-in">
+
+        <div class="row d-flex align-items-center">
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <img src="assets/img/clients/client-1.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <img src="assets/img/clients/client-2.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Clients Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="pricing" class="pricing">
+      <div class="container">
+        <div class="section-title">
+          <span>Service</span>
+          <h2>Osigi Services</h2>
+          <p>What Do We Do?</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="150">
+            <div class="box">
+              <h3>Plan 1</h3>
+              <p style="text-align:justify;"> Application for Expatriate Employment Pass (ESD Talent Corp) Application for Visas & Work Permit</p>
+              <div class="btn-wrap">
+                <!-- <a href="#contact" class="btn-buy">Get Started</a>-->
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="zoom-in">
+            <div class="box">
+              <h3>Plan 2</h3>
+              <p style="text-align:justify;"> Manpower Outsourcing. Establishment of fixed term contract of employment for expatriates.</p>
+              <div class="btn-wrap">
+               <!--  <a href="#contact" class="btn-buy">Get Started</a>-->
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
+            <div class="box">
+              <h3>Plan 3</h3>
+              <p style="text-align:justify;"> Flight tickets purchase for crews. Manage the check-in at the airport. Manage hotel booking for crews</p>
+              <div class="btn-wrap">
+                <!-- <a href="#contact" class="btn-buy">Get Started</a>-->
+              </div>
+            </div>
+          </div>  
+          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
+            <div class="box">
+              <h3>Plan 4</h3>
+              <p style="text-align:justify;">Cargo Handling (Door to Door). Sea and Air Custom Clearance.</p>
+              <div class="btn-wrap">
+               <!--  <a href="#contact" class="btn-buy">Get Started</a>-->
+              </div>
+            </div>
+          </div>  
+       
+        </div>
+      </div>
+    </section>
+ <!-- End Services Section -->
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-title">
+              <span>Milestone</span>
+              <section class="design-section"></section>
+                <div class="timeline">
+                          <div class="timeline-item">
+                          </div>
+                      <div class="timeline-middle">
+                          <div class="timeline-circle"></div>
+                      </div>
+                      <div class="timeline-component timeline-content">
+                        <h3>2016</h3>
+                        <p style="text-align:justify;"> Company established. Handling visa  
+                          for Oil & Gas Crew in Sabah &
+                           Sarawak. Handling their
+                           transportation and accommodation.
+                           Open branches in Miri, Sarawak &
+                           Kota Kinabalu, Sabah</p>
+                  </div>
+                        <div class="timeline-component timeline-content">
+                                <h3>2018</h3>
+                                <p style="text-align:justify;"> Expanding by handling visa for
+                                  others company in various fields.
+                                  Handling hotel booking, flight and
+                                  transportation for Oil & Gas
+                                  company.</p>
+                        </div>
+                        <div class="timeline-middle">
+                            <div class="timeline-circle"></div>
+                        </div>
+                        <div class="timeline-empty">
+                        </div>
+        
+                        <div class="timeline-empty">
+                        </div>
+        
+                      <div class="timeline-middle">
+                          <div class="timeline-circle"></div>
+                      </div>
+                      <div class=" timeline-component timeline-content">
+                        <h3>2024</h3>
+                        <p style="text-align:justify;"> Enter the world of Cargo. Handling Hajj Cargo for 1445H .</p>
+                  </div>
+                </section>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- End Cta Section -->
+
+    <!-- ======= Pricing Section ======= -->
+<!-- End Pricing Section -->
+
+    <!-- ======= Team Section ======= -->
+<section id="team" class="team">
+  <div class="container">
+    <div class="section-title">
+      <span>Our Team</span>
+      <h2>OSIGI Team</h2>
+      <p>Meet the dedicated individuals behind Osigi Services.</p>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
+        <div class="member">
+          <img src="assets/img/team/team-1.jpg" alt="">
+          <h4>MOHD NAZRI BIN ISHAK</h4>
+          <span>MANAGING DIRECTOR</span>
+          <p>
+            " “Every moment is a fresh beginning.”"
+          </p>
+          <div class="social">
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
+        <div class="member">
+          <img src="assets/img/team/team-2.jpg" alt="">
+          <h4>NORA BINTI AHMININ</h4>
+          <span>GENERAL MANAGER</span>
+          <p>
+            " "Stay inspired.Never stop creating.""
+          </p>
+          <div class="social">
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
+        <div class="member">
+          <img src="assets/img/team/team-2.jpg" alt="">
+          <h4>MARILYN</h4>
+          <span>BRANCH MANAGER MIRI</span>
+          <p>
+            " "Stay inspired.Never stop creating.""
+          </p>
+          <div class="social">
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
+        <div class="member">
+          <img src="assets/img/team/team-2.jpg" alt="">
+          <h4>ROZZIAH JR BINTI JEMAN</h4>
+          <span>BRANCH MANAGER SABAH</span>
+          <p>
+            "“A big business start small.”""
+          </p>
+          <div class="social">
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Team Section -->
+
+    <!-- ======= Contact Section ======= -->
+ <section id="contact" class="contact">
+  <div class="container">
+    <div class="section-title">
+      <span>Contact Us</span>
+      <h2>OFFICE</h2>
+      <p>Feel free to reach out to us for any inquiries or assistance.</p>
+    </div>
+    <div class="row" data-aos="fade-up">
+      <div class="col-lg-6">
+        <div class="info-box mb-4">
+          <i class="bx bx-map"></i>
+          <h3>HQ</h3>
+          <p>No 41A-1, Jalan Gemilang 1, Pusat Perniagaan Gemilang, Kota Warisan, Sepang</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="info-box mb-4">
+          <i class="bx bx-envelope"></i>
+          <h3>Email Us</h3>
+          <p>admin@osogiservices.com</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="info-box mb-4">
+          <i class="bx bx-phone-call"></i>
+          <h3>Call Us</h3>
+          <p>+6019 3674278</p>
+        </div>
+      </div>
+    </div>
+    <div class="row" data-aos="fade-up">
+      <div class="col-lg-6">
+        <div class="info-box mb-4">
+          <i class="bx bx-map"></i>
+          <h3>Sarawak Branch</h3>
+          <p> Unit 2.11, 2nd Floor Wisma Pelita Tunku Miri, Sarawak</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="info-box mb-4">
+          <i class="bx bx-envelope"></i>
+          <h3>Email Us</h3>
+          <p>admin@osogiservices.com</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="info-box mb-4">
+          <i class="bx bx-phone-call"></i>
+          <h3>Call Us</h3>
+          <p>+6085 - 426 417</p>
+        </div>
+      </div>
+    </div>
+    <div class="row" data-aos="fade-up">
+      <div class="col-lg-6">
+        <div class="info-box mb-4">
+          <i class="bx bx-map"></i>
+          <h3>Sabah Branch</h3>
+          <p>Lot 21, Likas Square Kota Kinabalu, Sabah</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="info-box mb-4">
+          <i class="bx bx-envelope"></i>
+          <h3>Email Us</h3>
+          <p>admin@osogiservices.com</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="info-box mb-4">
+          <i class="bx bx-phone-call"></i>
+          <h3>Call Us</h3>
+          <p>+6088 - 214 276</p>
+        </div>
+      </div>
+    </div>
+    <div class="row" data-aos="fade-up">
+      <div class="col-lg-6">
+        <iframe
+          class="mb-4 mb-lg-0"
+          src ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1992.5141681764715!2d101.69786729999998!3d2.8078348500000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cdb8af841ea837%3A0x25f17a7bb1d6022!2sPusat%20Perniagaan%20Gemilang%2C%20Exit%20B20%2C%2043900%20Sepang%2C%20Selangor!5e0!3m2!1sen!2smy!4v1712068097169!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          frameborder="0"
+          style="border:0; width: 100%; height: 384px;"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="col-lg-6">
+        <form action="#" method="" role="form" class="php-email-form">
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="col-md-6 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+          </div>
+          <div class="form-group mt-3">
+            <textarea class="form-control" name="message" rows="5" placeholder="Your Message" required></textarea>
+          </div>
+          <div class="my-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your message has been sent. Thank you!</div>
+          </div>
+          <div class="text-center"><button type="submit">Send Message</button></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-info">
+              <h3>Contact Details</h3>
+              <p>
+                No 41A-1, Jalan Gemilang 1, Pusat Perniagaan Gemilang, Kota Warisan, Sepang<br><br>
+                <strong>Phone:</strong> +60 19 3674278<br>
+                <strong>Email:</strong> admin@osogiservices.com<br>
+              </p>
+
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Our Plan</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Application for Expatriate Employment Pass</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Manpower Outsourcing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Flight tickets purchase for crews.</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Cargo Handling</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Stay up to date with our development and new features!</p>
+            <form action="" method="">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright 2024 <strong><span>OSOGI Sdn Bhd</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
